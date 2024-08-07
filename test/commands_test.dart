@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:archive/archive_io.dart';
+import 'package:archive_test/archive_io.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 

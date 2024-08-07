@@ -4,7 +4,7 @@ import 'dart:js' as js;
 import 'dart:math' as math;
 import 'dart:typed_data';
 
-import 'package:archive/archive_io.dart';
+import 'package:archive_test/archive_io.dart';
 
 /// Sample code showing how a large zip file can be extracted and compressed
 /// all within the RAM when running in a Web environment.

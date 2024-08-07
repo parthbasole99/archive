@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:archive/archive.dart';
+import 'package:archive_test/archive.dart';
 import 'package:test/test.dart';
 
 import '_test_util.dart';

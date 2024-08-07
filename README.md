@@ -37,17 +37,17 @@ The archive library currently supports the following codecs:
 
 ## Usage
 
-**package:archive/archive.dart**
+**package:archive_test/archive.dart**
 * Can be used for both web and native applications.
 
-**package:archive/archive_io.dart**
+**package:archive_test/archive_io.dart**
   * Provides some extra utilities for 'dart:io' based applications.
 
 
 #### Decoding a zip file in memory
 
 ```dart
-import 'package:archive/archive.dart';
+import 'package:archive_test/archive.dart';
 import 'dart:io';
 void main() {
   final bytes = File('test.zip').readAsBytesSync();
@@ -65,7 +65,7 @@ void main() {
 #### Using InputFileStream and OutputFileStream to extract a zip:
 ```dart
 import 'dart:io';
-import 'package:archive/archive.dart';
+import 'package:archive_test/archive.dart';
 void main() {
   // Use an InputFileStream to access the zip file without storing it in memory.
   // Note that using InputFileStream will result in an error from the web platform  
@@ -118,7 +118,7 @@ void main() {
 an archive file directory to an output directory.
 The type of archive it is will be determined by the file extension.
 ```dart
-import 'package:archive/archive_io.dart';
+import 'package:archive_test/archive_io.dart';
 // ...
 extractFileToDisk('test.zip', 'out');
 ```
@@ -126,7 +126,7 @@ extractFileToDisk('test.zip', 'out');
 `extractArchiveToDisk` is a convenience function to write the contents of an Archive
 to an output directory.
 ```dart
-import 'package:archive/archive_io.dart';
+import 'package:archive_test/archive_io.dart';
 // ...
 // Use an InputFileStream to access the zip file without storing it in memory.
 final inputStream = InputFileStream('test.zip');

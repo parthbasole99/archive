@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:archive/archive_io.dart';
+import 'package:archive_test/archive_io.dart';
 import 'package:test/test.dart';
 
 import '_test_util.dart';
